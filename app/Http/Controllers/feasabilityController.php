@@ -65,25 +65,7 @@ class feasabilityController extends Controller
 
        $feasability = new Feasability;
        $feasability->users_id = 1 ;
-       $feasability->projects_id = $request->input('projects_id');
-       $feasability->Operationalcatagory = $request->input('Operationalcatagory');
-       $feasability->Operationalunit = $request->input('Operationalunit');
-        $feasability->Operationalnumber = $request->input('Operationalnumber');
-       $feasability->OperationalunitCost = $request->input('OperationalunitCost');
-        $feasability->Operationalsource = $request->input('Operationalsource');
-        $feasability->toolsCatagory = $request->input('toolsCatagory');
-        $feasability->toolsNumber = $request->input('toolsNumber');
-        $feasability->toolsUnitCost = $request->input('toolsUnitCost');
-        $feasability->toolsSource = $request->input('toolsSource');
-        $feasability->productCatagory = $request->input('productCatagory');
-        $feasability->productUnit = $request->input('productUnit');
-        $feasability->productNumber = $request->input('productNumber');
-          $feasability->productUnitCost = $request->input('productUnitCost');
-          $feasability->productGoal = $request->input('productGoal');
-          $feasability->workerType =$request->input('workerType');
-           $feasability->workerNumber =$request->input('workerNumber');
-            $feasability->notes =$request->input('notes'); 
-             $feasability->workercost =$request->input('workercost');   
+    $feasability = Feasability::create($request->all());
 
        $feasability->save();
        return redirect('/study')->with('success' , 'feasability Created Successfully');

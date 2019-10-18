@@ -16,7 +16,11 @@ class indexController extends Controller
     public function index()
     { $person = Person::get();
         $project = Project::get();
-        return view('dashboard.index',compact(['project','person']));
+        $data = [
+    'person'  => $person,
+    'project'   => $project
+];
+        return view('dashboard.index',compact('person'));
     }
 
     /**

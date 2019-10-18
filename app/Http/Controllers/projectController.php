@@ -75,6 +75,7 @@ class projectController extends Controller
        
          
        $project->save();
+         return redirect('/study/create')->with('success','تمت اضافة بيانات المشروع بنجاح قم باضافة بيانات دراسة الجدوى ');
        
       // $id = $project->id
        //return redirect('/feas'.$id);

@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('dashboard.index');
-});
+});*/
 
 Route::resource('/person','personController');
 
@@ -23,3 +23,4 @@ Route::resource('/project','projectController');
 
 
 Route::resource('/study','feasabilityController');
+Route::resource('/','indexController');
