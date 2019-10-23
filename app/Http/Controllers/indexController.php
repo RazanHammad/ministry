@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Person;
 use App\Project ;
 
+
 class indexController extends Controller
 {
     /**
@@ -13,14 +14,19 @@ class indexController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    { $person = Person::get();
+    public function index(Request $request)
+    {   $person = Person::get();
         $project = Project::get();
         $data = [
     'person'  => $person,
     'project'   => $project
 ];
-        return view('dashboard.index',compact('person'));
+return view ('dashboard.index',compact('person'));
+
+  
+
+
+     
     }
 
     /**
@@ -30,7 +36,10 @@ class indexController extends Controller
      */
     public function create()
     {
-        //
+   $q = $request->input('q');
+    $person = Person::where('name','LIKE','%'.$q.'%')->get();
+    if(count($person) > 0)
+        return view('dashboard.index2')->withQuery ( $q );
     }
 
     /**

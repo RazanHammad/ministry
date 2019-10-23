@@ -57,8 +57,8 @@
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
-                            <input type="text" class="search-input" placeholder="Type to search">
-                            <button class="search-icon"><span></span></button>
+
+
                         </div>
                         <button class="close"></button>
                     </div>
@@ -130,7 +130,7 @@
                             <ul class="vertical-nav-menu">
                                 <li class="app-sidebar__heading">IPA</li>
                                 <li>
-                                    <a href="index.html" class="mm-active">
+                                    <a href="/" class="mm-active">
                                         <i class="metismenu-icon pe-7s-rocket"></i>
                                         الصفحة الرئيسية
                                     </a>

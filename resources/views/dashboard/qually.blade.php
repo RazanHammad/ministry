@@ -130,7 +130,7 @@
                             <ul class="vertical-nav-menu">
                                 <li class="app-sidebar__heading">IPA</li>
                                 <li>
-                                    <a href="index.html" class="mm-active">
+                                    <a href="/" class="mm-active">
                                         <i class="metismenu-icon pe-7s-rocket"></i>
                                         الصفحة الرئيسية
                                     </a>
@@ -146,7 +146,7 @@
                                     
                                     
                                 >
-                                    <a href="userdata.html">
+                                    <a href="/person/create">
                                         <i class="metismenu-icon pe-7s-diamond"></i>
                                         البيانات الشخصية
                                         <i class="metismenu-state-icon  caret-left"></i>
@@ -168,7 +168,7 @@
                                     
                                     
                                 >
-                                    <a href="Qualifications.html">
+                                    <a href="/qualy/create">
                                         <i class="metismenu-icon pe-7s-car"></i>
                                         المؤهلات والخبرات
                                         <i class="metismenu-state-icon  caret-left"></i>
@@ -182,13 +182,13 @@
                                 
                                 <li class="app-sidebar__heading">بيانات المشروع</li>
                                 <li>
-                                    <a href="projectdata.html">
+                                    <a href="/project/craete">
                                         <i class="metismenu-icon pe-7s-mouse">
                                         </i>بيانات المشروع
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="study.html">
+                                    <a href="/study/create">
                                         <i class="metismenu-icon pe-7s-eyedropper">
                                         </i>دراسة الجدوى
                                     </a>

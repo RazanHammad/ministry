@@ -57,8 +57,19 @@
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
-                            <input type="text" class="search-input" placeholder="Type to search">
-                            <button class="search-icon"><span></span></button>
+                          <form action="{{route('person.create')}}" method="POST" role="search">
+    {{ csrf_field() }}
+    <div class="input-group">
+        <input type="text" class="form-control" name="q"
+            placeholder="Search users"> <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">
+
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+    </div>
+</form>
+
                         </div>
                         <button class="close"></button>
                     </div>
@@ -197,7 +208,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>      <div class="app-main__outer">
+                </div>    <div class="app-main__outer">
                     <div class="app-main__inner">
                         <div class="app-page-title">
                             <div class="page-title-wrapper">
@@ -206,100 +217,116 @@
                                         <i class="pe-7s-car icon-gradient bg-mean-fruit">
                                         </i>
                                     </div>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <div>بيانات المشروع 
-                                        <div class="page-title-subheading">المعلومات الأساسية عن المشروع
+                                    <div>الخدمات الإلكترونية
+                                        <div class="page-title-subheading">هيئة تشجيع الإستثمار الفلسطينية
                                         </div>
                                     </div>
                                 </div>
-                                 </div>
-                        </div>            <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
-                            <li class="nav-item">
-                                <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
-                                    <span>بيانات المشروع</span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body"><h5 class="card-title">البيانات المطلوبة</h5>
-                                         @include('includes.message')
-                                        <form method="post" action="{{route('project.store')}}" class="">
-                                            @csrf
-                                            <div class="form-row">
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="اسم المشروع" class="">اسم المشروع</label><input name="projectName" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="مجال المشروع" class="">مجال العمل</label><input name="projectField" id="" type="text"  class="form-control"></div>                                                                                                     
-                                                </div>
-                                                      <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="نوع المشروع" class="">نوع المشروع</label><input name="projectType" id="" type="text" class="form-control"></div>                                                                                                     
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-row">
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="عنوان المشروع" class="">عنوان المشروع</label><input name="projectTitle" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="فكرة عامة عن المشروع" class="">فكرة عامة عن المشروع</label><input name="projectDetails" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                       <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="مهارات خاصة في المشروع" class="">مهارات خاصة في المشروع</label><input name="projectNeeds" id="" type="text" class="form-control"></div>
-                                                </div>
-                                            </div>
-                                                     <div class="form-row">
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="سبب اختيار المشروع" class="">سبب اختيار المشروع</label><input name="projectReason" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="حالة المشروع" class="">حالة المشروع</label><input name="projetStatus" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                       <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="عدد المعالين" class="">عدد المعالين</label><input name="projectNoPerson" id="" type="number" class="form-control"></div>
-                                                </div>
-                                            </div>
-                                                     <div class="form-row">
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="تاريخ بدء العمل" class="">تاريخ بدء العمل</label><input name="projectStartDate" id="" type="date" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="رأسمال المشروع" class="">رأسمال المشروع</label><input name="projectCost" id="" type="number" class="form-control"></div>
-                                                </div>
-                                                       <div class="col-md-4">
-                                                    <div class="position-relative form-group"><label for="قيمة الموجودات" class="">قيمة الموجودات</label><input name="projectThingsCost" id="" type="number" class="form-control"></div>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="mt-2 btn btn-primary" >حفظ</button>
-                                        </form>
+   </div>
+                        </div>            <div class="row">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-midnight-bloom">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">البيانات الشخصية</div>
+                                            <div class="widget-subheading">إدخال البيانات الشخصية</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                       
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-
                             </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-arielle-smile">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">بيانات المشروع</div>
+                                            <div class="widget-subheading">إدخال بيانات المشروع</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-grow-early">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">تسجيل خروج</div>
+                                            <div class="widget-subheading">.....</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">Active Users
+                                        <div class="btn-actions-pane-right">
+
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th class="text-center">#</th>
+                                                <th>الأسم</th>
+                                                <th class="text-center">المحافظة</th>
+                                                <th class="text-center">الحالة</th>
+                                                <th class="text-center">التفاصيل</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach($person as $pr)
+                                            <tr>
+                                                <td class="text-center text-muted">{{$pr->id}}</td>
+                                                <td>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <div class="widget-content-left">
+                                                                    <img width="40" class="rounded-circle" src="{{asset('dashboard')}}/assets/images/avatars/4.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">{{$pr->name}}</div>
+                                                                <div class="widget-subheading opacity-7">{{$pr->husbandWork}}</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">Madrid</td>
+                                                <td class="text-center">
+                                                    <div class="badge badge-warning">{{$pr->status}}</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" id="PopoverCustomT-1" class="btn btn-primary btn-sm">تفاصيل</button>
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                      
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-block text-center card-footer">
+                                        <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        <button class="btn-wide btn btn-success">Save</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                            
+
+                    </div>
                     <div class="app-wrapper-footer">
                         <div class="app-footer">
                             <div class="app-footer__inner">
@@ -308,14 +335,15 @@
                                     <ul class="nav">
                                         <li class="nav-item">
                                             <a href="javascript:void(0);" class="nav-link">
-                                              
+                                                
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>   </div>
+                    </div>    </div>
+                <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         </div>
     </div>
 <script type="text/javascript" src="{{asset('dashboard')}}/assets/scripts/main.js"></script></body>
