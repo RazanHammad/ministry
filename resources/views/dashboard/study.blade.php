@@ -53,7 +53,8 @@
                         </span>
                     </button>
                 </span>
-            </div>    <div class="app-header__content">
+            </div>
+            <div class="app-header__content">
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
@@ -62,7 +63,7 @@
                         </div>
                         <button class="close"></button>
                     </div>
-                          </div>
+                </div>
                 <div class="app-header-right">
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
@@ -88,191 +89,153 @@
                                         بيانات الملف الشخصي
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    </div>        </div>
-            </div>
-        </div> 
-                <div class="app-main">
-                <div class="app-sidebar sidebar-shadow">
-                    <div class="app-header__logo">
-                        <div class="logo-src"></div>
-                        <div class="header__pane ml-auto">
-                            <div>
-                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
-                                    <span class="hamburger-box">
-                                        <span class="hamburger-inner"></span>
-                                    </span>
-                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="app-header__mobile-menu">
+                </div>
+            </div>
+        </div>
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
                         <div>
-                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
                                 <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
                                 </span>
                             </button>
                         </div>
                     </div>
-                    <div class="app-header__menu">
-                        <span>
-                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
-                                <span class="btn-icon-wrapper">
-                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
-                                </span>
-                            </button>
-                        </span>
-                    </div>    <div class="scrollbar-sidebar">
-                        <div class="app-sidebar__inner">
-                            <ul class="vertical-nav-menu">
-                                <li class="app-sidebar__heading">IPA</li>
-                                <li>
-                                    <a href="/" class="mm-active">
-                                        <i class="metismenu-icon pe-7s-rocket"></i>
-                                        الصفحة الرئيسية
-                                    </a>
-                                </li>
-                                <li class="app-sidebar__heading">البيانات المطلوبة</li>
-                                <li
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                >
-                                    <a href="/person/create">
-                                        <i class="metismenu-icon pe-7s-diamond"></i>
-                                        البيانات الشخصية
-                                        <i class="metismenu-state-icon  caret-left"></i>
-                                    </a>
-                               
-                                    
-                                    
-                                </li>
-                                <li
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                >
-                                    <a href="/qualy/create">
-                                        <i class="metismenu-icon pe-7s-car"></i>
-                                        المؤهلات والخبرات
-                                        <i class="metismenu-state-icon  caret-left"></i>
-                                    </a>
-                                    
-                                    
-                                    
-                                    
-                                </li>
-                                
-                                
-                                <li class="app-sidebar__heading">بيانات المشروع</li>
-                                <li>
-                                    <a href="/project/craete">
-                                        <i class="metismenu-icon pe-7s-mouse">
-                                        </i>بيانات المشروع
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/study/create">
-                                        <i class="metismenu-icon pe-7s-eyedropper">
-                                        </i>دراسة الجدوى
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                        </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
                     </div>
-                </div>    <div class="app-main__outer">
-                    <div class="app-main__inner">
-                        <div class="app-page-title">
-                            <div class="page-title-wrapper">
-                                <div class="page-title-heading">
-                                    <div class="page-title-icon">
-                                        <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                                        </i>
-                                    </div>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <div>دراسة الجدوى 
-                                        <div class="page-title-subheading">معلومات ودراسة الجدوى الخاصة في المشروع
-                                        </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading">IPA</li>
+                            <li>
+                                <a href="/" class="mm-active">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>
+                                    الصفحة الرئيسية
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">البيانات المطلوبة</li>
+                            <li>
+                                <a href="/person/create">
+                                    <i class="metismenu-icon pe-7s-diamond"></i>
+                                    البيانات الشخصية
+                                    <i class="metismenu-state-icon  caret-left"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/qualy/create">
+                                    <i class="metismenu-icon pe-7s-car"></i>
+                                    المؤهلات والخبرات
+                                    <i class="metismenu-state-icon  caret-left"></i>
+                                </a>
+                            </li>
+                            <li class="app-sidebar__heading">بيانات المشروع</li>
+                            <li>
+                                <a href="/project/craete">
+                                    <i class="metismenu-icon pe-7s-mouse">
+                                    </i>بيانات المشروع
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/study/create">
+                                    <i class="metismenu-icon pe-7s-eyedropper">
+                                    </i>دراسة الجدوى
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="pe-7s-car icon-gradient bg-mean-fruit">
+                                    </i>
+                                </div>
+                                <div>دراسة الجدوى
+                                    <div class="page-title-subheading">
+                                        معلومات ودراسة الجدوى الخاصة في المشروع
                                     </div>
                                 </div>
-                                 </div>
-                        </div>            <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
-                            <li class="nav-item">
-                                <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
-                                    <span>الألات و المعدات</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a role="tab" class="nav-link" id="tab-1" data-toggle="tab" href="#tab-content-1">
-                                    <span>التكاليف التشغيلية</span>
-                                </a>
-                            </li>
-                             <li class="nav-item">
-                                <a role="tab" class="nav-link" id="tab-2" data-toggle="tab" href="#tab-content-2">
-                                    <span>العمال</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a role="tab" class="nav-link" id="tab-3" data-toggle="tab" href="#tab-content-3">
-                                    <span>المنتجات</span>
-                                </a>
-                            </li>
-                        
-                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
+                        <li class="nav-item">
+                            <a role="tab" class="nav-link active" id="tab-0" data-toggle="tab" href="#tab-content-0">
+                                <span>الألات و المعدات</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="tab" class="nav-link" id="tab-1" data-toggle="tab" href="#tab-content-1">
+                                <span>التكاليف التشغيلية</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="tab" class="nav-link" id="tab-2" data-toggle="tab" href="#tab-content-2">
+                                <span>العمال</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="tab" class="nav-link" id="tab-3" data-toggle="tab" href="#tab-content-3">
+                                <span>المنتجات</span>
+                            </a>
+                        </li>
+                    </ul>
+                    @include('includes.message')
+                    <form class="" method="post" action="{{route('study.store')}}">
+                        @csrf
                         <div class="tab-content">
                             <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
                                 <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">الألات و المعدات</h5>
-                                        @include('includes.message')
-                                        <form class="" method="post" action="{{route('study.store')}}">
-                                           @csrf
                                             <div class="form-row">
-                                                 <div class="col-md-6">
+                                                <div class="col-md-6">
                                                      <div class="position-relative form-group">
-                                                 <select class="position-relative form-group" name="project_id">
-                                                    @foreach($project as $pr)
-                                                      <option value="$pr->id">{{$pr->projectName}}</option>
-                                                      @endforeach
-                                                    </select> 
-                                                </div>
+                                                         <label for="project_id">المشروع</label>
+                                                         <select class="position-relative form-control  " id="project_id" name="project_id">
+                                                             @foreach($project as $pr)
+                                                                <option value="{{$pr->id}}">{{$pr->projectName}}</option>
+                                                             @endforeach
+                                                         </select>
+                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="toolsCatagory" id="" placeholder="" type="text" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="toolsCatagory" id="الصنف" placeholder="" type="text" class="form-control"></div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="toolsNumber" id="" placeholder="" type="number"
-                                                class="form-control"></div>                                                                                                     
+                                                class="form-control"></div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name="toolsUnitCost" id="" type="text" class="form-control"></div>
@@ -280,21 +243,13 @@
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="المصدر" class="">المصدر</label><input name="toolsSource" id="" type="text" class="form-control"></div>
                                                 </div>
-                                                
                                             </div>
+
                                              <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-1">
                                        التالي</a>
-                                        
+
                                     </div>
                                 </div>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-
                             </div>
                             <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
                                  <div class="main-card mb-3 card">
@@ -305,10 +260,10 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="Operationalnumber" id="" placeholder="" type="number"
-                                                class="form-control"></div>                                                                                                     
+                                                class="form-control"></div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="الوحدة" class="">الوحدة</label><input name="Operationalunit" id="" type="text" class="form-control"></div>
@@ -316,114 +271,98 @@
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name=" OperationalunitCost" id="" type="number" class="form-control"></div>
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="المصدر" class="">المصدر</label><input name="Operationalsource" id="" type="text" class="form-control"></div>
                                                 </div>
 
                                             </div>
-                                            
+
                                             <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-2">التالي</a>
-                                       
+
                                     </div>
                                 </div>
-                                
+
                             </div>
-                            
-                            
-                             <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
+                            <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">العمال</h5>
-                                    
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="نوع العمال" class="">نوع العمال</label><input name="workerType" id="" placeholder="" type="text" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="workerNumber" id="" placeholder="" type="number"
-                                                class="form-control"></div>                                                                                                     
-                                                </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="نوع العمال" class="">نوع العمال</label><input name="workerType" id="" placeholder="" type="text" class="form-control"></div>
                                             </div>
-                                            
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="الأجر الشهري" class="">الأجر الشهري</label><input name="workercost" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="ملاحظات" class="">ملاحظات</label><input name="notes" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="workerNumber" id="" placeholder="" type="number"
+                                            class="form-control"></div>
                                             </div>
-                                            
-                                            <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-3">التالي</a>
-                                       
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="الأجر الشهري" class="">الأجر الشهري</label><input name="workercost" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="ملاحظات" class="">ملاحظات</label><input name="notes" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+                                        <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-3">التالي</a>
                                     </div>
                                 </div>
-                                
-                            </div>
-                            
-                            
-                                                        
-                             <div class="tab-pane tabs-animation fade" id="tab-content-3" role="tabpanel">
+                             </div>
+                            <div class="tab-pane tabs-animation fade" id="tab-content-3" role="tabpanel">
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">المنتجات</h5>
-                                      
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="productCatagory" id="" placeholder="" type="text" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="productNumber" id="" placeholder="" type="number"
-                                                class="form-control"></div>                                                                                                     
-                                                </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="productCatagory" id="" placeholder="" type="text" class="form-control"></div>
                                             </div>
-                                            
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="الوحدة" class="">الوحدة</label><input name="productUnit" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name="productUnitCost" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="productNumber" id="" placeholder="" type="number"
+                                            class="form-control"></div>
                                             </div>
-                                            
-                                             <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="الفئة المستهدفة" class="">الفئة المستهدفة</label><input name="productGoal" id="" type="text" class="form-control"></div>
-                                                </div>
-                                                
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="الوحدة" class="">الوحدة</label><input name="productUnit" id="" type="text" class="form-control"></div>
                                             </div>
-                                            
-                                            <button type="submit" class="mt-2 btn btn-primary" >حفظ</button>
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name="productUnitCost" id="" type="text" class="form-control"></div>
+                                            </div>
+
+                                        </div>
+                                         <div class="form-row">
+                                            <div class="col-md-6">
+                                                <div class="position-relative form-group"><label for="الفئة المستهدفة" class="">الفئة المستهدفة</label><input name="productGoal" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="mt-2 btn btn-primary" >حفظ</button>
                                    </div>
                                </div>
                            </div>
-                       </form>
-                              
-                            
-                            
-                     
+                        </div>
+                   </form>
                     <div class="app-wrapper-footer">
-                        <div class="app-footer">
-                            <div class="app-footer__inner">
+                    <div class="app-footer">
+                        <div class="app-footer__inner">
 
-                                <div class="app-footer-right">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                Eng.Sharif Al'Mashharawi...
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="app-footer-right">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="javascript:void(0);" class="nav-link">
+                                            Eng.Sharif Al'Mashharawi...
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>   </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
-<script type="text/javascript" src="{{asset('dashboard')}}/assets/scripts/main.js"></script></body>
+    <script type="text/javascript" src="{{asset('dashboard')}}/assets/scripts/main.js"></script>
+</body>
 </html>
