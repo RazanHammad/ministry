@@ -46,6 +46,7 @@ class qualyController extends Controller
                 'monthlyIncome' => 'required',
                 'IncomeSource' => 'required',
                 'major' => 'required',
+                
  
        ]
 

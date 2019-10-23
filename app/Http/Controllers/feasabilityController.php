@@ -37,7 +37,7 @@ class feasabilityController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-                'projects_id' => 'required',
+                'project_id' => 'required',
                 'Operationalcatagory'=> 'required',
                 'Operationalunit' => 'required',
                 'Operationalnumber' =>'required' ,

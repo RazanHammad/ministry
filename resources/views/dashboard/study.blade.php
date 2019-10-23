@@ -253,11 +253,11 @@
                                     <div class="card-body"><h5 class="card-title">الألات و المعدات</h5>
                                         @include('includes.message')
                                         <form class="" method="post" action="{{route('study.store')}}">
-                                             {{ csrf_field() }}
+                                           @csrf
                                             <div class="form-row">
                                                  <div class="col-md-6">
                                                      <div class="position-relative form-group">
-                                                 <select class="position-relative form-group" name="projects_id">
+                                                 <select class="position-relative form-group" name="project_id">
                                                     @foreach($project as $pr)
                                                       <option value="$pr->id">{{$pr->projectName}}</option>
                                                       @endforeach
@@ -284,7 +284,7 @@
                                             </div>
                                              <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-1">
                                        التالي</a>
-                                        </form>
+                                        
                                     </div>
                                 </div>
                                 
@@ -299,7 +299,6 @@
                             <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">التكاليف التشغيلية</h5>
-                                        <form class="">
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="Operationalcatagory" id="" placeholder="" type="text" class="form-control"></div>
@@ -328,7 +327,7 @@
                                             </div>
                                             
                                             <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-2">التالي</a>
-                                        </form>
+                                       
                                     </div>
                                 </div>
                                 
@@ -338,7 +337,7 @@
                              <div class="tab-pane tabs-animation fade" id="tab-content-2" role="tabpanel">
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">العمال</h5>
-                                        <form class="">
+                                    
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="نوع العمال" class="">نوع العمال</label><input name="workerType" id="" placeholder="" type="text" class="form-control"></div>
@@ -360,7 +359,7 @@
                                             </div>
                                             
                                             <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-3">التالي</a>
-                                        </form>
+                                       
                                     </div>
                                 </div>
                                 
@@ -371,7 +370,7 @@
                              <div class="tab-pane tabs-animation fade" id="tab-content-3" role="tabpanel">
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">المنتجات</h5>
-                                        <form class="">
+                                      
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="productCatagory" id="" placeholder="" type="text" class="form-control"></div>
@@ -400,16 +399,14 @@
                                             </div>
                                             
                                             <button type="submit" class="mt-2 btn btn-primary" >حفظ</button>
-                                        </form>
-                                    </div>
-                                </div>
-                                
-                            </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </form>
+                              
                             
                             
-                            
-                        </div>
-                    </div>
+                     
                     <div class="app-wrapper-footer">
                         <div class="app-footer">
                             <div class="app-footer__inner">
