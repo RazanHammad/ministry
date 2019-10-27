@@ -63,10 +63,8 @@ class feasabilityController extends Controller
         );
       
 
-       $feasability = new Feasability;
-       $feasability->users_id = 1 ;
-    $feasability = Feasability::create($request->all());
-
+      $request_data = $request->all();
+Feasability::create($request_data);
        $feasability->save();
        return redirect('/study')->with('success' , 'feasability Created Successfully');
     }

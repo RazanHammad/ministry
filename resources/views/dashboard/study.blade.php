@@ -228,6 +228,7 @@
                                                      </div>
                                                 </div>
                                                 <div class="col-md-6">
+                                                    <input type="hidden" name="user_id" value="1">
                                                     <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="toolsCatagory" id="الصنف" placeholder="" type="text" class="form-control"></div>
                                                 </div>
                                                 <div class="col-md-6">
