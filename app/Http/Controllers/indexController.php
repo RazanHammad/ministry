@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Person;
 use App\Project ;
+use App\User;
 
 
 class indexController extends Controller
@@ -36,13 +37,20 @@ return view ('dashboard.index',compact('person'));
      */
     public function create()
     {
-   $q = $request->input('q');
-    $person = Person::where('name','LIKE','%'.$q.'%')->get();
-    if(count($person) > 0)
-        return view('dashboard.index2')->withQuery ( $q );
+   
+          
     }
 
-    /**
+
+public function getsearch (Request $request)
+{
+
+
+      $keyword=  $request->get('q');
+
+     $users= User::where('name','like','%'.$keyword.'%')->get();
+
+ return response()->json($users);}    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

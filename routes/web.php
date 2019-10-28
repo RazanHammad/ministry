@@ -23,4 +23,5 @@ Route::resource('/project','projectController');
 
 
 Route::resource('/study','feasabilityController');
+Route::get('search','indexController@getsearch');
 Route::resource('/','indexController');

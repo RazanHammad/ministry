@@ -54,13 +54,14 @@
                     </button>
                 </span>
             </div>    <div class="app-header__content">
-               <div class="app-header-left">
+                <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
-                        <form action="/search" method="get">
-                            <input type="text" name="q" class="search-input" placeholder="Type to search"/>
-                            <button type="submit" class="search-icon"><span></span></button>
-                        </form>
+                <form  action="{{route('create')}}" method="get">
+                            <input type="text" class="search-input" name="q" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                       </form>
+
                         </div>
                         <button class="close"></button>
                     </div>
@@ -278,7 +279,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($person as $pr)
+                                                @foreach($users as $pr)
                                             <tr>
                                                 <td class="text-center text-muted">{{$pr->id}}</td>
                                                 <td>
@@ -291,11 +292,18 @@
                                                             </div>
                                                             <div class="widget-content-left flex2">
                                                                 <div class="widget-heading">{{$pr->name}}</div>
-                                                                
+                                                                <div class="widget-subheading opacity-7">{{$pr->husbandWork}}</div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>
-                                               
+                                                <td class="text-center">Madrid</td>
+                                                <td class="text-center">
+                                                    <div class="badge badge-warning">{{$pr->status}}</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" id="PopoverCustomT-1" class="btn btn-primary btn-sm">تفاصيل</button>
+                                                </td>
                                             </tr>
                                             @endforeach
                                       
@@ -331,15 +339,4 @@
         </div>
     </div>
 <script type="text/javascript" src="{{asset('dashboard')}}/assets/scripts/main.js"></script></body>
-<script type="text/javascript">
-    var path = "{{ url('search') }}";
-    $('#q').typeahead({
-         minLength: 2,
-        source:  function (query, process) {
-        return $.get(path, { query: query }, function (data) {
-                return process(data);
-            });
-        }
-    });
-</script>
 </html>
