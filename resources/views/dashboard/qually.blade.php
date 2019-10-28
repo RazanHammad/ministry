@@ -182,7 +182,7 @@
                                 
                                 <li class="app-sidebar__heading">بيانات المشروع</li>
                                 <li>
-                                    <a href="/project/craete">
+                                    <a href="/project/create">
                                         <i class="metismenu-icon pe-7s-mouse">
                                         </i>بيانات المشروع
                                     </a>

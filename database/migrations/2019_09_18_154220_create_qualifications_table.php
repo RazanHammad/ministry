@@ -17,9 +17,9 @@ class CreateQualificationsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->string('qualificatin');
-            $table->string('experience');
+            $table->text('experience');
             $table->string('monthlyIncome');
-            $table->string('IncomeSource');
+            $table->text('IncomeSource');
             $table->string('major');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
