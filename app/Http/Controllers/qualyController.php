@@ -57,10 +57,10 @@ class qualyController extends Controller
        $qualy->user_id=1;
          $qualy->qualificatin = $request->input('qualificatin');
 
-        $qualy->experience = json_encode(request('experience'));
-        $qualy->monthlyIncome = json_encode(request('monthlyIncome'));
+        $qualy->experience = json_encode(request('experience'),JSON_UNESCAPED_UNICODE);
+        $qualy->monthlyIncome = json_encode(request('monthlyIncome'),JSON_UNESCAPED_UNICODE);
         $qualy->major = $request->input('major');
-        $qualy->IncomeSource = json_encode(request('IncomeSource'));
+        $qualy->IncomeSource = json_encode(request('IncomeSource'),JSON_UNESCAPED_UNICODE);
         $qualy->save();
         //return redirect('/qualy');
          return redirect('/project/create')->with('success','تمت عملية الاضافة بنجاح قم باضافة بيانات المشروع');
