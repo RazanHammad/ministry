@@ -19,23 +19,23 @@ class CreateFeasabilitiesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('Operationalcatagory');
             $table->string('Operationalunit');
-            $table->integer('Operationalnumber');
+            $table->string('Operationalnumber');
            
-            $table->float('OperationalunitCost');
+            $table->string('OperationalunitCost');
             $table->string('Operationalsource');
             $table->string('toolsCatagory');
-            $table->integer('toolsNumber');
-            $table->float('toolsUnitCost');
+            $table->string('toolsNumber');
+            $table->string('toolsUnitCost');
             $table->string('toolsSource');
             $table->string('productCatagory');
             $table->string('productUnit');
-            $table->integer('productNumber');
-            $table->float('productUnitCost');
+            $table->string('productNumber');
+            $table->string('productUnitCost');
             $table->text('productGoal');
             $table->string('workerType');
-            $table->integer('workerNumber');
+            $table->string('workerNumber');
             $table->text('notes');
-            $table->float('workercost');
+            $table->string('workercost');
             $table->foreign('user_id')->references('id')->on('users')
 
                 ->onDelete('cascade');

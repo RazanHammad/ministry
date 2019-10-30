@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Person;
 use App\Project ;
 use App\User;
+use PDF;
+
 
 
 class indexController extends Controller
@@ -16,13 +18,10 @@ class indexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
-    {   $person = Person::get();
+    {   $user = User::get();
         $project = Project::get();
-        $data = [
-    'person'  => $person,
-    'project'   => $project
-];
-return view ('dashboard.index',compact('person'));
+  
+return view ('dashboard.index',compact(['user','project']));
 
   
 
@@ -30,6 +29,55 @@ return view ('dashboard.index',compact('person'));
      
     }
 
+    public function print($id)
+    {   $user = User::find($id);
+        $person =Person::where('user_id','=',$id);
+  
+return view ('dashboard.print.index',compact(['user','person']));
+
+  
+
+
+     
+    }
+
+    public function printpro($id)
+    {   $user = User::find($id);
+        $project =Project::where('user_id','=',$id);
+  
+return view ('dashboard.print.project',compact(['user','project']));
+
+  
+
+
+     
+    }
+
+
+     public function export_pdf($id)
+  {
+    // Fetch all customers from database
+    $user = User::find($id);
+    // Send data to the view using loadView function of PDF facade
+    $pdf = PDF::loadView('dashboard.print.index2' ,compact('user'));
+    // If you want to store the generated pdf to the server then you can use the store function
+    $pdf->save(storage_path().'_filename.pdf');
+    // Finally, you can download the file using download function
+    return $pdf->download('project.pdf');
+  }
+
+
+     public function proexport_pdf($id)
+  {
+    // Fetch all customers from database
+    $user = User::find($id);
+    // Send data to the view using loadView function of PDF facade
+    $pdf = PDF::loadView('dashboard.print.project2' ,compact('user'));
+    // If you want to store the generated pdf to the server then you can use the store function
+    $pdf->save(storage_path().'_filename.pdf');
+    // Finally, you can download the file using download function
+    return $pdf->download('user.pdf');
+  }
     /**
      * Show the form for creating a new resource.
      *

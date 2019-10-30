@@ -24,7 +24,7 @@ class feasabilityController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {  $project = Project::get();
+    {   $project = Project::get();
         return view('dashboard.study',compact('project'));
     }
 
@@ -38,34 +38,59 @@ class feasabilityController extends Controller
     {
         $this->validate($request,[
                 'project_id' => 'required',
-                'Operationalcatagory'=> 'required',
-                'Operationalunit' => 'required',
-                'Operationalnumber' =>'required' ,
-                'OperationalunitCost' => 'required' ,
-                'Operationalsource' => 'required' , 
-                'toolsCatagory'=>'required',
-                'toolsNumber' => 'required',
-                'toolsUnitCost' => 'required',
-                'toolsSource' => 'required',
-                'productCatagory' => 'required',
-                'productUnit' => 'required',
-                'productNumber' => 'required',
-                'productUnitCost' => 'required' ,
-                'productGoal' => 'required',
-                'workerType' => 'required',
-                'workerNumber' => 'required',
-                'notes' => 'required',
-                'workercost' => 'required',
-
+                'toolsCatagory' => 'sometimes|nullable',
+                'toolsNumber' => 'sometimes|nullable',
+                'toolsUnitCost' =>'sometimes|nullable',
+                'toolsSource' => 'sometimes|nullable',
+                'Operationalcatagory' => 'sometimes|nullable',
+                'Operationalunit' =>  'sometimes|nullable',
+                'Operationalnumber' => 'sometimes|nullable',
+                'OperationalunitCost' =>'sometimes|nullable',
+                'Operationalsource'   =>'sometimes|nullable',
+                'productCatagory'   => 'sometimes|nullable',
+                'productUnit'  => 'sometimes|nullable',
+                'productNumber'  => 'sometimes|nullable',
+                'productUnitCost'   =>'sometimes|nullable',
+                    'productGoal' => 'sometimes|nullable',
+          
        ]
 
 
         );
       
+       $request_data = new Feasability;
+       $request_data->user_id =1;
+       $request_data->project_id = $request->input('project_id');
+        $request_data->toolsCatagory = json_encode(request('toolsCatagory'),JSON_UNESCAPED_UNICODE);
+        $request_data->toolsNumber = json_encode(request('toolsNumber'),JSON_UNESCAPED_UNICODE);
+         $request_data->toolsUnitCost = json_encode(request('toolsUnitCost'),JSON_UNESCAPED_UNICODE);
+          $request_data->toolsSource = json_encode(request('toolsSource'),JSON_UNESCAPED_UNICODE);
 
-      $request_data = $request->all();
-$feasability=Feasability::create($request_data);
-       $feasability->save();
+
+          $request_data->Operationalcatagory = json_encode(request('Operationalcatagory'),JSON_UNESCAPED_UNICODE);
+        $request_data->Operationalunit = json_encode(request('Operationalunit'),JSON_UNESCAPED_UNICODE);
+         $request_data->Operationalnumber = json_encode(request('Operationalnumber'),JSON_UNESCAPED_UNICODE);
+          $request_data->OperationalunitCost = json_encode(request('OperationalunitCost'),JSON_UNESCAPED_UNICODE);
+              $request_data->Operationalsource = json_encode(request('Operationalsource'),JSON_UNESCAPED_UNICODE);  
+
+
+
+      $request_data->productCatagory = json_encode(request('productCatagory'),JSON_UNESCAPED_UNICODE);
+        $request_data->productUnit = json_encode(request('productUnit'),JSON_UNESCAPED_UNICODE);
+         $request_data->productNumber = json_encode(request('productNumber'),JSON_UNESCAPED_UNICODE);
+          $request_data->productUnitCost = json_encode(request('productUnitCost'),JSON_UNESCAPED_UNICODE);
+              $request_data->productGoal = json_encode(request('productGoal'),JSON_UNESCAPED_UNICODE);
+
+
+
+
+      $request_data->workerType = json_encode(request('workerType'),JSON_UNESCAPED_UNICODE);
+        $request_data->workerNumber = json_encode(request('workerNumber'),JSON_UNESCAPED_UNICODE);
+         $request_data->notes = json_encode(request('notes'),JSON_UNESCAPED_UNICODE);
+          $request_data->workercost = json_encode(request('workercost'),JSON_UNESCAPED_UNICODE);
+            
+
+     $request_data->save();
        return redirect('/')->with('success' , 'feasability Created Successfully');
     }
 

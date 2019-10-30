@@ -25,3 +25,8 @@ Route::resource('/project','projectController');
 Route::resource('/study','feasabilityController');
 Route::get('search','indexController@getsearch');
 Route::resource('/','indexController');
+Route::get('/print/{id}','indexController@print');
+Route::get('/print/pdf/{id}','indexController@export_pdf');
+
+Route::get('/printpro/{id}','indexController@printpro');
+Route::get('/printpro/pdf/{id}','indexController@proexport_pdf');

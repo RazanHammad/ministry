@@ -275,10 +275,13 @@
                                                 <th class="text-center">المحافظة</th>
                                                 <th class="text-center">الحالة</th>
                                                 <th class="text-center">التفاصيل</th>
+                                                 <th class="text-center">طباعة البيانات الشخصية </th>
+                                                   <th class="text-center">طباعة بيانات المشروع</th>
+                                                     <th class="text-center">طباعة دراسة الجدوى</th>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($person as $pr)
+                                                @foreach($user as $pr)
                                             <tr>
                                                 <td class="text-center text-muted">{{$pr->id}}</td>
                                                 <td>
@@ -295,7 +298,16 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                               
+                                                   <td class="text-center">محافظة</td>
+
+                                                      <td class="text-center">حالة</td>
+                                                       <td class="text-center">تفاصيل</td>
+
+                <td class="text-center"><a class="btnprn btn" href="/print/{{$pr->id}}" role="button">اطبع بياناتك الشخصية</a></td>
+                          
+                          <td class="text-center" ><a class="btnprn btn" href="/printpro/{{$pr->id}}" role="button">طباعة بيانات المشروع</a></td> 
+
+                          <td class="text-center" ><a class="btnprn btn" href="/printpro/{{$pr->id}}" role="button">طبااعة دراسة الجدوى</a></td>                      
                                             </tr>
                                             @endforeach
                                       
@@ -341,5 +353,12 @@
             });
         }
     });
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('.btnprn').printPage();
+});
 </script>
 </html>

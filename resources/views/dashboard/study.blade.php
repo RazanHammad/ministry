@@ -227,23 +227,112 @@
                                                          </select>
                                                      </div>
                                                 </div>
-                                                <div class="col-md-6">
+                                                  </div>
+                                                  <div class="form-row">
+                                                <div class="col-md-3">
                                                     <input type="hidden" name="user_id" value="1">
-                                                    <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="toolsCatagory" id="الصنف" placeholder="" type="text" class="form-control"></div>
+                                                    <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="toolsCatagory[]" id="الصنف" placeholder="" type="text" class="form-control"></div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="toolsNumber" id="" placeholder="" type="number"
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="toolsNumber[]" id="" placeholder="" type="number"
                                                 class="form-control"></div>
+                                                </div>
+                                          
+
+                                            
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name="toolsUnitCost[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><label for="المصدر" class="">المصدر</label><input name="toolsSource[]" id="" type="text" class="form-control"></div>
                                                 </div>
                                             </div>
 
                                             <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name="toolsUnitCost" id="" type="text" class="form-control"></div>
+                                                
+                                                <div class="col-md-3">
+                                                    
+                                                    <div class="position-relative form-group"><input name="toolsCatagory[]" id="الصنف" placeholder="" type="text" class="form-control"></div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="المصدر" class="">المصدر</label><input name="toolsSource" id="" type="text" class="form-control"></div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsNumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
                                                 </div>
+                                          
+
+                                            
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsUnitCost[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsSource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
+                                            </div>
+                                             <div class="form-row">
+                                                
+                                                <div class="col-md-3">
+                                          
+                                                    <div class="position-relative form-group"><input name="toolsCatagory[]" id="الصنف" placeholder="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsNumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
+                                                </div>
+                                          
+
+                                            
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsUnitCost[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsSource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
+                                            </div>
+
+                                             <div class="form-row">
+                                                
+                                                <div class="col-md-3">
+                                                  
+                                                    <div class="position-relative form-group"><input name="toolsCatagory[]" id="الصنف" placeholder="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsNumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
+                                                </div>
+                                          
+
+                                            
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsUnitCost[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsSource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
+                                            </div>
+
+                                             <div class="form-row">
+                                                
+                                                <div class="col-md-3">
+                                                
+                                                    <div class="position-relative form-group"><input name="toolsCatagory[]" id="الصنف" placeholder="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsNumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
+                                                </div>
+                                          
+
+                                            
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsUnitCost[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="position-relative form-group"><input name="toolsSource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
                                             </div>
 
                                              <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-1">
@@ -256,31 +345,140 @@
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">التكاليف التشغيلية</h5>
                                             <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="Operationalcatagory" id="" placeholder="" type="text" class="form-control"></div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="Operationalcatagory[]" id="" placeholder="" type="text" class="form-control"></div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="Operationalnumber" id="" placeholder="" type="number"
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="Operationalnumber[]" id="" placeholder="" type="number"
                                                 class="form-control"></div>
                                                 </div>
-                                            </div>
+                                           
 
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="الوحدة" class="">الوحدة</label><input name="Operationalunit" id="" type="text" class="form-control"></div>
+                                          
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><label for="الوحدة" class="">الوحدة</label><input name="Operationalunit[]" id="" type="text" class="form-control"></div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name=" OperationalunitCost" id="" type="number" class="form-control"></div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="position-relative form-group"><label for="المصدر" class="">المصدر</label><input name="Operationalsource" id="" type="text" class="form-control"></div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name=" OperationalunitCost[]" id="" type="number" class="form-control"></div>
                                                 </div>
 
+                                         
+
+                                            
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><label for="المصدر" class="">المصدر</label><input name="Operationalsource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
                                             </div>
+
+                                              <div class="form-row">
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalcatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalnumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
+                                                </div>
+                                           
+
+                                          
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalunit[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name=" OperationalunitCost[]" id="" type="number" class="form-control"></div>
+                                                </div>
+
+                                         
+
+                                            
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalsource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
+                                            </div>
+
+                                             <div class="form-row">
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalcatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalnumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
+                                                </div>
+                                           
+
+                                          
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalunit[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name=" OperationalunitCost[]" id="" type="number" class="form-control"></div>
+                                                </div>
+
+                                         
+
+                                            
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalsource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
+                                            </div>
+
+                                             <div class="form-row">
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalcatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalnumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
+                                                </div>
+                                           
+
+                                          
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalunit[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name=" OperationalunitCost[]" id="" type="number" class="form-control"></div>
+                                                </div>
+
+                                         
+
+                                            
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalsource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
+                                            </div>
+
+                                             <div class="form-row">
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalcatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalnumber[]" id="" placeholder="" type="number"
+                                                class="form-control"></div>
+                                                </div>
+                                           
+
+                                          
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalunit[]" id="" type="text" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name=" OperationalunitCost[]" id="" type="number" class="form-control"></div>
+                                                </div>
+
+                                         
+
+                                            
+                                                <div class="col-md-2">
+                                                    <div class="position-relative form-group"><input name="Operationalsource[]" id="" type="text" class="form-control"></div>
+                                                </div>
+
+                                            </div>
+
 
                                             <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-2">التالي</a>
 
@@ -292,22 +490,95 @@
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">العمال</h5>
                                         <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="نوع العمال" class="">نوع العمال</label><input name="workerType" id="" placeholder="" type="text" class="form-control"></div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><label for="نوع العمال" class="">نوع العمال</label><input name="workerType[]" id="" placeholder="" type="text" class="form-control"></div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="workerNumber" id="" placeholder="" type="number"
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="workerNumber[]" id="" placeholder="" type="number"
                                             class="form-control"></div>
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="الأجر الشهري" class="">الأجر الشهري</label><input name="workercost" id="" type="text" class="form-control"></div>
+                                        
+                                       
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><label for="الأجر الشهري" class="">الأجر الشهري</label><input name="workercost[]" id="" type="text" class="form-control"></div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="ملاحظات" class="">ملاحظات</label><input name="notes" id="" type="text" class="form-control"></div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><label for="ملاحظات" class="">ملاحظات</label><input name="notes[]" id="" type="text" class="form-control"></div>
                                             </div>
                                         </div>
+
+                                          <div class="form-row">
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerType[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                        
+                                       
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workercost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="notes[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+
+                                          <div class="form-row">
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerType[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                        
+                                       
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workercost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="notes[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+
+                                          <div class="form-row">
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerType[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                        
+                                       
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workercost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="notes[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+
+                                          <div class="form-row">
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerType[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workerNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                        
+                                       
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="workercost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="position-relative form-group"><input name="notes[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+
                                         <a role="tab" class="mt-2 btn btn-primary" id="tab-1" data-toggle="tab" href="#tab-content-3">التالي</a>
                                     </div>
                                 </div>
@@ -316,28 +587,120 @@
                                  <div class="main-card mb-3 card">
                                     <div class="card-body"><h5 class="card-title">المنتجات</h5>
                                         <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="productCatagory" id="" placeholder="" type="text" class="form-control"></div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><label for="الصنف" class="">الصنف</label><input name="productCatagory[]" id="" placeholder="" type="text" class="form-control"></div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="productNumber" id="" placeholder="" type="number"
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><label for="العدد" class="">العدد</label><input name="productNumber[]" id="" placeholder="" type="number"
                                             class="form-control"></div>
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="الوحدة" class="">الوحدة</label><input name="productUnit" id="" type="text" class="form-control"></div>
+                                     
+                                      
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><label for="الوحدة" class="">الوحدة</label><input name="productUnit[]" id="" type="text" class="form-control"></div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name="productUnitCost" id="" type="text" class="form-control"></div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><label for="سعر الوحدة" class="">سعر الوحدة</label><input name="productUnitCost[]" id="" type="text" class="form-control"></div>
                                             </div>
 
-                                        </div>
-                                         <div class="form-row">
-                                            <div class="col-md-6">
-                                                <div class="position-relative form-group"><label for="الفئة المستهدفة" class="">الفئة المستهدفة</label><input name="productGoal" id="" type="text" class="form-control"></div>
+                                
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><label for="الفئة المستهدفة" class="">الفئة المستهدفة</label><input name="productGoal[]" id="" type="text" class="form-control"></div>
                                             </div>
                                         </div>
+
+
+                                            <div class="form-row">
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productCatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                     
+                                      
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnit[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnitCost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+
+                                
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productGoal[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+
+                                           <div class="form-row">
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productCatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                     
+                                      
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnit[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnitCost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+
+                                
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productGoal[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+                                           <div class="form-row">
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productCatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                     
+                                      
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnit[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnitCost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+
+                                
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productGoal[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+
+                                           <div class="form-row">
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productCatagory[]" id="" placeholder="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productNumber[]" id="" placeholder="" type="number"
+                                            class="form-control"></div>
+                                            </div>
+                                     
+                                      
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnit[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productUnitCost[]" id="" type="text" class="form-control"></div>
+                                            </div>
+
+                                
+                                            <div class="col-md-2">
+                                                <div class="position-relative form-group"><input name="productGoal[]" id="" type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+                                        
                                         <button type="submit" class="mt-2 btn btn-primary" >حفظ</button>
                                    </div>
                                </div>
