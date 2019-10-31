@@ -275,9 +275,8 @@
                                                 <th class="text-center">المحافظة</th>
                                                 <th class="text-center">الحالة</th>
                                                 <th class="text-center">التفاصيل</th>
-                                                 <th class="text-center">طباعة البيانات الشخصية </th>
-                                                   <th class="text-center">طباعة بيانات المشروع</th>
-                                                     <th class="text-center">طباعة دراسة الجدوى</th>
+                                                 <th class="text-center">طباعة</th>
+                                                
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -305,9 +304,7 @@
 
                 <td class="text-center"><a class="btnprn btn" href="/print/{{$pr->id}}" role="button">اطبع بياناتك الشخصية</a></td>
                           
-                          <td class="text-center" ><a class="btnprn btn" href="/printpro/{{$pr->id}}" role="button">طباعة بيانات المشروع</a></td> 
-
-                          <td class="text-center" ><a class="btnprn btn" href="/printpro/{{$pr->id}}" role="button">طبااعة دراسة الجدوى</a></td>                      
+                                       
                                             </tr>
                                             @endforeach
                                       

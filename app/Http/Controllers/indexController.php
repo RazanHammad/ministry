@@ -7,6 +7,7 @@ use App\Person;
 use App\Project ;
 use App\User;
 use PDF;
+use App\Feasability;
 
 
 
@@ -32,8 +33,15 @@ return view ('dashboard.index',compact(['user','project']));
     public function print($id)
     {   $user = User::find($id);
         $person =Person::where('user_id','=',$id);
-  
-return view ('dashboard.print.index',compact(['user','person']));
+            $project1 =Project::where('user_id','=',$id)->get();
+             $project2 =Project::where('user_id','=',$id)->get();
+              $project3 =Project::where('user_id','=',$id)->get();
+               $feas1= Feasability::where('user_id','=',$id)->get();
+             $feas2= Feasability::where('user_id','=',$id)->get();
+             $feas3= Feasability::where('user_id','=',$id)->get();
+             $feas4= Feasability::where('user_id','=',$id)->get();
+             $feas5= Feasability::where('user_id','=',$id)->get(); 
+return view ('dashboard.print.index',compact(['user','person','project1','project2','project3','feas1','feas2','feas3','feas4','feas5']));
 
   
 
@@ -43,7 +51,7 @@ return view ('dashboard.print.index',compact(['user','person']));
 
     public function printpro($id)
     {   $user = User::find($id);
-        $project =Project::where('user_id','=',$id);
+        $project =Project::where('user_id','=',$id)->get();
   
 return view ('dashboard.print.project',compact(['user','project']));
 
@@ -58,12 +66,21 @@ return view ('dashboard.print.project',compact(['user','project']));
   {
     // Fetch all customers from database
     $user = User::find($id);
+        $person =Person::where('user_id','=',$id);
+            $project1 =Project::where('user_id','=',$id)->get();
+             $project2 =Project::where('user_id','=',$id)->get();
+              $project3 =Project::where('user_id','=',$id)->get();
+              $feas1= Feasability::where('user_id','=',$id)->get();
+             $feas2= Feasability::where('user_id','=',$id)->get();
+             $feas3= Feasability::where('user_id','=',$id)->get();
+             $feas4= Feasability::where('user_id','=',$id)->get();
+             $feas5= Feasability::where('user_id','=',$id)->get(); 
     // Send data to the view using loadView function of PDF facade
-    $pdf = PDF::loadView('dashboard.print.index2' ,compact('user'));
+    $pdf = PDF::loadView('dashboard.print.index2' ,compact(['user','person','project1','project2','project3','feas1','feas2','feas3','feas4','feas5']));
     // If you want to store the generated pdf to the server then you can use the store function
     $pdf->save(storage_path().'_filename.pdf');
     // Finally, you can download the file using download function
-    return $pdf->download('project.pdf');
+    return $pdf->download('user.pdf');
   }
 
 
@@ -76,7 +93,7 @@ return view ('dashboard.print.project',compact(['user','project']));
     // If you want to store the generated pdf to the server then you can use the store function
     $pdf->save(storage_path().'_filename.pdf');
     // Finally, you can download the file using download function
-    return $pdf->download('user.pdf');
+    return $pdf->download('project.pdf');
   }
     /**
      * Show the form for creating a new resource.
