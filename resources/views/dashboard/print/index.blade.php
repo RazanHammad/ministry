@@ -4,7 +4,7 @@
 	<br><br>
 <a href="/print/pdf/{{$user->id}}">Export PDF</a>
 
-<h1>Print User Information</h1>
+<h1> بيانات عامة عن صاحب المشروع</h1>
 <table width="400" border="1"  id="customers">
 <tr><th>Id</th><th>Name</th><th>Email</th><th>birthDate</th></tr>
 <tr><td>{{ $user->id }}</td>
