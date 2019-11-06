@@ -1,29 +1,27 @@
-<html>
+<html dir="rtl" lang="ar">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-#customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+  <meta  name="viewport" content="width=device-width, initial-scale=1">
+<style>/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
 }
-
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
 }
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: right; 
 }
 </style>
 </head>

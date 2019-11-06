@@ -302,7 +302,7 @@
                                                       <td class="text-center">حالة</td>
                                                        <td class="text-center">تفاصيل</td>
 
-                <td class="text-center"><a class="btnprn btn" href="/print/{{$pr->id}}" role="button">اطبع بياناتك الشخصية</a></td>
+                <td class="text-center"><a class="btnprn btn" href="/print/{{$pr->id}}" role="button">اطبع</a></td>
                           
                                        
                                             </tr>
