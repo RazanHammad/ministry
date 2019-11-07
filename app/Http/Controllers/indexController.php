@@ -105,8 +105,9 @@ public function getsearch (Request $request)
 
 
 if($request->has('q')){
+
    
-            $users = User::query()->where('name', 'like', "%{q}%")->get();
+            $users =  User::where('name', 'like','%'.$request->q.'%')->WhereBetween('created_at', ['2019-01-01', '2019-08-02'])->get();
         }else{
             $users = User::get();
         }
