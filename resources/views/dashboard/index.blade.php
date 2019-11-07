@@ -298,6 +298,7 @@
                                                                 
                                                         </div>
                                                     </div>
+                                                </div>
                                                 </td>
                                                    <td class="text-center">محافظة</td>
 

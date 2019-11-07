@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Qualification extends Model
 {
+
+	protected $casts = [
+    'experience' => 'array',
+    'monthlyIncome' =>'array' ,
+    'IncomeSource' => 'array' ,
+   
+];
     protected $fillable = [
       'qualificatin' ,'experience','monthlyIncome' ,'IncomeSource','major',
 

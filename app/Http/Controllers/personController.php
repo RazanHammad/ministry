@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Person;
+use App\User;
 
 class personController extends Controller
 {
@@ -56,23 +57,30 @@ class personController extends Controller
 
         );
       
-
+ $user= new User ;
+        
+        $user->name =  $request->input('name');
+        $user->email=$request->input('email');
+        $user->password= '$2y$10$EU7bjsitWrsyhw6kuQpEhO14x.NZXKRJT9kSqTKzULC8/hjhYq00K';
+        $user->save();
        $person = new Person;
-        $person->user_id = 1;
-       $person->name = $request->input('name');
+        $person->user_id = $user->id;
+       $person->name = $user->name;
         $person->sex = $request->input('sex');
         $person->birthDate = $request->input('birthDate');
        $person->idNo = $request->input('idNo');
        $person->address = $request->input('address');
         $person->phone = $request->input('phone');
         $person->mobile = $request->input('mobile');
-        $person->email = $request->input('email');
+        $person->email = $user->email;
         $person->status = $request->input('status');
         $person->noChild = $request->input('noChild');
          $person->husbandName = $request->input('husbandName');
         $person->husbandWork = $request->input('husbandWork');
+       
          
        $person->save();
+
          return redirect('/qualy/create')->with('success','تمت عملية الاضافة بنجاح قم باضافة مؤهلاتك العلمية');
          
     }

@@ -67,7 +67,8 @@ class feasabilityController extends Controller
           $request_data->toolsSource = json_encode(request('toolsSource'),JSON_UNESCAPED_UNICODE);
 
 
-          $request_data->Operationalcatagory = json_encode(request('Operationalcatagory'),JSON_UNESCAPED_UNICODE);
+          $request_data['Operationalcatagory'] = array_filter($request->Operationalcatagory);
+    
         $request_data->Operationalunit = json_encode(request('Operationalunit'),JSON_UNESCAPED_UNICODE);
          $request_data->Operationalnumber = json_encode(request('Operationalnumber'),JSON_UNESCAPED_UNICODE);
           $request_data->OperationalunitCost = json_encode(request('OperationalunitCost'),JSON_UNESCAPED_UNICODE);
@@ -89,7 +90,8 @@ class feasabilityController extends Controller
          $request_data->notes = json_encode(request('notes'),JSON_UNESCAPED_UNICODE);
           $request_data->workercost = json_encode(request('workercost'),JSON_UNESCAPED_UNICODE);
             
-
+     $data = $request->validate( $request_data);
+         dd($data);
      $request_data->save();
        return redirect('/')->with('success' , 'feasability Created Successfully');
     }
