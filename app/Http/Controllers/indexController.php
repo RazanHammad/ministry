@@ -19,14 +19,7 @@ class indexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
-    {   $user = User::get();
-        $project = Project::get();
-  
-return view ('dashboard.index',compact(['user','project']));
-
-  
-
-
+    {  
      
     }
 
@@ -111,11 +104,16 @@ public function getsearch (Request $request)
 {
 
 
-      $keyword=  $request->get('q');
+if($request->has('q')){
+   
+            $users = User::query()->where('name', 'like', "%{q}%")->get();
+        }else{
+            $users = User::get();
+        }
 
-     $users= User::where('name','like','%'.$keyword.'%')->get();
 
- return response()->json($users);}    /**
+        return view('dashboard.index', compact('users'));}  
+          /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

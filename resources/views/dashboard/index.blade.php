@@ -54,12 +54,14 @@
                     </button>
                 </span>
             </div>    <div class="app-header__content">
+
+             
                <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
-                        <form action="/search" method="get">
+                        <form action="/" method="GET">
                             <input type="text" name="q" class="search-input" placeholder="Type to search"/>
-                            <button type="submit" class="search-icon"><span></span></button>
+                            <button type="submit" class="search-icon"><span>Search</span></button>
                         </form>
                         </div>
                         <button class="close"></button>
@@ -280,7 +282,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($user as $pr)
+                                                @foreach($users as $pr)
                                             <tr>
                                                 <td class="text-center text-muted">{{$pr->id}}</td>
                                                 <td>

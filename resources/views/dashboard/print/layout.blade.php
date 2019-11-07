@@ -1,7 +1,7 @@
 <html dir="rtl" lang="ar">
 
 <head>
-  <meta  name="viewport" content="width=device-width, initial-scale=1">
+  <meta   charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <style>/* 
 Generic Styling, for Desktops/Laptops 
 */
@@ -22,6 +22,9 @@ td, th {
   padding: 6px; 
   border: 1px solid #ccc; 
   text-align: right; 
+}
+body {
+  font-family: 'DejaVu Sans' ;
 }
 </style>
 </head>

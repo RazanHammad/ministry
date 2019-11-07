@@ -23,8 +23,8 @@ Route::resource('/project','projectController');
 
 
 Route::resource('/study','feasabilityController');
-Route::get('search','indexController@getsearch');
-Route::resource('/','indexController');
+Route::get('/','indexController@getsearch');
+//Route::resource('/','indexController');
 Route::get('/print/{id}','indexController@print');
 Route::get('/print/pdf/{id}','indexController@export_pdf');
 

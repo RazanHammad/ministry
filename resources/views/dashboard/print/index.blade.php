@@ -4,7 +4,7 @@
 	<br><br>
 <a href="/print/pdf/{{$user->id}}">Export PDF</a>
 
-<h1 dir="right"> بيانات عامة عن صاحب المشروع</h1>
+<h1 > بيانات عامة عن صاحب المشروع</h1>
 <table width="400" border="1"  >
 <tr><th width="30%">رقم استمارة طلب القرض</th><td>{{ $user->id }}</td><th>التاريخ</th><td></td></tr>
 <tr><th>اسم صاحب المشروع</th><td colspan="3">{{ $user->name }}</td></tr>
@@ -23,7 +23,7 @@
 </table>
 <br>
 
-<h1 dir="right">بيانات عن المشروع</h1>
+<h1 >بيانات عن المشروع</h1>
 <table width="400" border="1"   >
 @foreach($project1 as $pr1)
 <tr><th width="30%">اسم المشروع</th><td width="70%" >{{$pr1->projectName}}</td></tr>
