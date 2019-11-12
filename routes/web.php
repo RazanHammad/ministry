@@ -30,3 +30,4 @@ Route::get('/print/pdf/{id}','indexController@export_pdf');
 
 Route::get('/printpro/{id}','indexController@printpro');
 Route::get('/printpro/pdf/{id}','indexController@proexport_pdf');
+Route::get('/view','indexController@view');

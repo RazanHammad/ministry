@@ -3,7 +3,6 @@
 <center>
 	<br><br>
 <a href="/print/pdf/{{$user->id}}">Export PDF</a>
-
 <h1 > بيانات عامة عن صاحب المشروع</h1>
 <table width="400" border="1"  >
 <tr><th width="30%">رقم استمارة طلب القرض</th><td>{{ $user->id }}</td><th>التاريخ</th><td></td></tr>
@@ -16,10 +15,10 @@
 <tr><th>اسم الزوجة</th><td>{{ $user->person->husbandName }}</td><th>عمل الزوجة</th><td>{{$user->person->husbandWork}}</td></tr>
 
 <tr><th >المؤهل العلمي</th><td colspan="3">{{$user->person->qualificatin}}</td></tr>
-<tr><th>الخبرات العملية </th><td colspan="3">1-{{$user->qualification->experience[0]}}</td></tr>
-<tr><th></th><td colspan="3">2-{{$user->qualification->experience[1]}}</td></tr>
-<tr><th>الدخل الشهري ومصادره</th><td colspan="3">{{$user->qualification->monthlyIncome[0]}} - {{$user->qualification->IncomeSource[0]}}</td></tr>
-<tr><th></th><td colspan="3">{{$user->qualification->monthlyIncome[1]}} - {{$user->qualification->IncomeSource[1]}}</td></tr>
+<tr><th>الخبرات العملية </th><td colspan="3">1-{{json_decode($user->qualification->experience,true)[0]}}</td></tr>
+<tr><th></th><td colspan="3">2-{{json_decode($user->qualification->experience,true)[1]}}</td></tr>
+<tr><th>الدخل الشهري ومصادره</th><td colspan="3">{{json_decode($user->qualification->monthlyIncome,true)[0]}} - {{json_decode($user->qualification->IncomeSource,true)[0]}}</td></tr>
+<tr><th></th><td colspan="3">{{json_decode($user->qualification->monthlyIncome,true)[1]}} - {{json_decode($user->qualification->IncomeSource,true)[1]}}</td></tr>
 </table>
 <br>
 
@@ -52,11 +51,11 @@
 <table  width="400" border="1"  >
 	<tr><th>اسم المشروع</th><th>{{$f1->project->projectName}}</th></tr>
 <tr><th>الصنف</th><th>الوحدة</th><th>العدد</th><th>سعر الوحدة</th><th>المصدر</th></tr>
-<tr><td>{{$f1->Operationalcatagory[0]}}</td><td>{{$f1->Operationalunit[0]}}</td><td>{{$f1->Operationalnumber[0]}}</td><td>{{$f1->OperationalunitCost[0]}}</td><td>{{$f1->Operationalsource[0]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[1]}}</td><td>{{$f1->Operationalunit[1]}}</td><td>{{$f1->Operationalnumber[1]}}</td><td>{{$f1->OperationalunitCost[1]}}</td><td>{{$f1->Operationalsource[1]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[2]}}</td><td>{{$f1->Operationalunit[2]}}</td><td>{{$f1->Operationalnumber[2]}}</td><td>{{$f1->OperationalunitCost[2]}}</td><td>{{$f1->Operationalsource[2]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[3]}}</td><td>{{$f1->Operationalunit[3]}}</td><td>{{$f1->Operationalnumber[3]}}</td><td>{{$f1->OperationalunitCost[3]}}</td><td>{{$f1->Operationalsource[3]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[4]}}</td><td>{{$f1->Operationalunit[4]}}</td><td>{{$f1->Operationalnumber[4]}}</td><td>{{$f1->OperationalunitCost[4]}}</td><td>{{$f1->Operationalsource[4]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[0]}}</td><td>{{json_decode($f1->Operationalunit,true)[0]}}</td><td>{{json_decode($f1->Operationalnumber,true)[0]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[0]}}</td><td>{{json_decode($f1->Operationalsource,true)[0]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[1]}}</td><td>{{json_decode($f1->Operationalunit,true)[1]}}</td><td>{{json_decode($f1->Operationalnumber,true)[1]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[1]}}</td><td>{{json_decode($f1->Operationalsource,true)[1]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[2]}}</td><td>{{json_decode($f1->Operationalunit,true)[2]}}</td><td>{{json_decode($f1->Operationalnumber,true)[2]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[2]}}</td><td>{{json_decode($f1->Operationalsource,true)[2]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[3]}}</td><td>{{json_decode($f1->Operationalunit,true)[3]}}</td><td>{{json_decode($f1->Operationalnumber,true)[3]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[3]}}</td><td>{{json_decode($f1->Operationalsource,true)[3]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[4]}}</td><td>{{json_decode($f1->Operationalunit,true)[4]}}</td><td>{{json_decode($f1->Operationalnumber,true)[4]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[4]}}</td><td>{{json_decode($f1->Operationalsource,true)[4]}}</td></tr>
 </table>
 
 
@@ -66,11 +65,11 @@
 	<table  width="400" border="1">
 
 <tr><th>الصنف</th><th>العدد</th><th>الوحدة</th><th>سعر الوحدة</th><th>المصدر</th></tr>
-<tr><td>{{$f1->Operationalcatagory[0]}}</td><td>{{$f1->Operationalnumber[0]}}</td><td>{{$f1->Operationalunit[0]}}</td><td>{{$f1->OperationalunitCost[0]}}</td><td>{{$f1->Operationalsource[0]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[1]}}</td><td>{{$f1->Operationalnumber[1]}}</td><td>{{$f1->Operationalunit[1]}}</td><td>{{$f1->OperationalunitCost[1]}}</td><td>{{$f1->Operationalsource[1]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[2]}}</td><td>{{$f1->Operationalnumber[2]}}</td><td>{{$f1->Operationalunit[2]}}</td><td>{{$f1->OperationalunitCost[2]}}</td><td>{{$f1->Operationalsource[2]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[3]}}</td><td>{{$f1->Operationalnumber[3]}}</td><td>{{$f1->Operationalunit[3]}}</td><td>{{$f1->OperationalunitCost[3]}}</td><td>{{$f1->Operationalsource[3]}}</td></tr>
-<tr><td>{{$f1->Operationalcatagory[4]}}</td><td>{{$f1->Operationalnumber[4]}}</td><td>{{$f1->Operationalunit[4]}}</td><td>{{$f1->OperationalunitCost[4]}}</td><td>{{$f1->Operationalsource[4]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[0]}}</td><td>{{json_decode($f1->Operationalnumber,true)[0]}}</td><td>{{json_decode($f1->Operationalunit,true)[0]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[0]}}</td><td>{{json_decode($f1->Operationalsource,true)[0]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[1]}}</td><td>{{json_decode($f1->Operationalnumber,true)[1]}}</td><td>{{json_decode($f1->Operationalunit,true)[1]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[1]}}</td><td>{{json_decode($f1->Operationalsource,true)[1]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[2]}}</td><td>{{json_decode($f1->Operationalnumber,true)[2]}}</td><td>{{json_decode($f1->Operationalunit,true)[2]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[2]}}</td><td>{{json_decode($f1->Operationalsource,true)[2]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[3]}}</td><td>{{json_decode($f1->Operationalnumber,true)[3]}}</td><td>{{json_decode($f1->Operationalunit,true)[3]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[3]}}</td><td>{{json_decode($f1->Operationalsource,true)[3]}}</td></tr>
+<tr><td>{{$f1->Operationalcatagory[4]}}</td><td>{{json_decode($f1->Operationalnumber,true)[4]}}</td><td>{{json_decode($f1->Operationalunit,true)[4]}}</td><td>{{json_decode($f1->OperationalunitCost,true)[4]}}</td><td>{{json_decode($f1->Operationalsource,true)[4]}}</td></tr>
 </table>
 
 <br>
@@ -78,11 +77,11 @@
 	<table  width="400" border="1">
 
 <tr><th>نوع العمال</th><th>العدد</th><th>الأجر الشهري</th><th>ملاحظات</th></tr>
-<tr><td>{{$f1->workerType[0]}}</td><td>{{$f1->workerNumber[0]}}</td><td>{{$f1->workercost[0]}}</td><td>{{$f1->notes[0]}}</td></tr>
-<tr><td>{{$f1->workerType[1]}}</td><td>{{$f1->workerNumber[1]}}</td><td>{{$f1->workercost[1]}}</td><td>{{$f1->notes[1]}}</td></tr>
-<tr><td>{{$f1->workerType[2]}}</td><td>{{$f1->workerNumber[2]}}</td><td>{{$f1->workercost[2]}}</td><td>{{$f1->notes[2]}}</td></tr>
-<tr><td>{{$f1->workerType[3]}}</td><td>{{$f1->workerNumber[3]}}</td><td>{{$f1->workercost[3]}}</td><td>{{$f1->notes[3]}}</td></tr>
-<tr><td>{{$f1->workerType[4]}}</td><td>{{$f1->workerNumber[4]}}</td><td>{{$f1->workercost[4]}}</td><td>{{$f1->notes[4]}}</td></tr>
+<tr><td>{{json_decode($f1->workerType,true)[0]}}</td><td>{{json_decode($f1->workerNumber,true)[0]}}</td><td>{{json_decode($f1->workercost,true)[0]}}</td><td>{{json_decode($f1->notes,true)[0]}}</td></tr>
+<tr><td>{{json_decode($f1->workerType,true)[1]}}</td><td>{{json_decode($f1->workerNumber,true)[1]}}</td><td>{{json_decode($f1->workercost,true)[1]}}</td><td>{{json_decode($f1->notes,true)[1]}}</td></tr>
+<tr><td>{{json_decode($f1->workerType,true)[2]}}</td><td>{{json_decode($f1->workerNumber,true)[2]}}</td><td>{{json_decode($f1->workercost,true)[2]}}</td><td>{{json_decode($f1->notes,true)[2]}}</td></tr>
+<tr><td>{{json_decode($f1->workerType,true)[3]}}</td><td>{{json_decode($f1->workerNumber,true)[3]}}</td><td>{{json_decode($f1->workercost,true)[3]}}</td><td>{{json_decode($f1->notes,true)[3]}}</td></tr>
+<tr><td>{{json_decode($f1->workerType,true)[4]}}</td><td>{{json_decode($f1->workerNumber,true)[4]}}</td><td>{{json_decode($f1->workercost,true)[4]}}</td><td>{{json_decode($f1->notes,true)[4]}}</td></tr>
 </table>
 
 <br>
@@ -92,11 +91,11 @@
 	<table  width="400" border="1">
 
 <tr><th>الصنف </th><th>العدد</th><th>الوحدة </th><th>سعر الوحدة</th><th>لمن ستبيع المنتج</th></tr>
-<tr><td>{{$f1->productCatagory[0]}}</td><td>{{$f1->productNumber[0]}}</td><td>{{$f1->productUnit[0]}}</td><td>{{$f1->productUnitCost[0]}}</td><td>{{$f1->productGoal[0]}}</td></tr>
-<tr><td>{{$f1->productCatagory[1]}}</td><td>{{$f1->productNumber[1]}}</td><td>{{$f1->productUnit[1]}}</td><td>{{$f1->productUnitCost[1]}}</td><td>{{$f1->productGoal[1]}}</td></tr>
-<tr><td>{{$f1->productCatagory[2]}}</td><td>{{$f1->productNumber[2]}}</td><td>{{$f1->productUnit[2]}}</td><td>{{$f1->productUnitCost[2]}}</td><td>{{$f1->productGoal[2]}}</td></tr>
-<tr><td>{{$f1->productCatagory[3]}}</td><td>{{$f1->productNumber[3]}}</td><td>{{$f1->productUnit[3]}}</td><td>{{$f1->productUnitCost[3]}}</td><td>{{$f1->productGoal[3]}}</td></tr>
-<tr><td>{{$f1->productCatagory[4]}}</td><td>{{$f1->productNumber[4]}}</td><td>{{$f1->productUnit[4]}}</td><td>{{$f1->productUnitCost[4]}}</td><td>{{$f1->productGoal[4]}}</td></tr>
+<tr><td>{{json_decode($f1->productCatagory,true)[0]}}</td><td>{{json_decode($f1->productNumber,true)[0]}}</td><td>{{json_decode($f1->productUnit,true)[0]}}</td><td>{{json_decode($f1->productUnitCost,true)[0]}}</td><td>{{json_decode($f1->productGoal,true)[0]}}</td></tr>
+<tr><td>{{json_decode($f1->productCatagory,true)[1]}}</td><td>{{json_decode($f1->productNumber,true)[1]}}</td><td>{{json_decode($f1->productUnit,true)[1]}}</td><td>{{json_decode($f1->productUnitCost,true)[1]}}</td><td>{{json_decode($f1->productGoal,true)[1]}}</td></tr>
+<tr><td>{{json_decode($f1->productCatagory,true)[2]}}</td><td>{{json_decode($f1->productNumber,true)[2]}}</td><td>{{json_decode($f1->productUnit,true)[2]}}</td><td>{{json_decode($f1->productUnitCost,true)[2]}}</td><td>{{json_decode($f1->productGoal,true)[2]}}</td></tr>
+<tr><td>{{json_decode($f1->productCatagory,true)[3]}}</td><td>{{json_decode($f1->productNumber,true)[3]}}</td><td>{{json_decode($f1->productUnit,true)[3]}}</td><td>{{json_decode($f1->productUnitCost,true)[3]}}</td><td>{{json_decode($f1->productGoal,true)[3]}}</td></tr>
+<tr><td>{{json_decode($f1->productCatagory,true)[4]}}</td><td>{{json_decode($f1->productNumber,true)[4]}}</td><td>{{json_decode($f1->productUnit,true)[4]}}</td><td>{{json_decode($f1->productUnitCost,true)[4]}}</td><td>{{json_decode($f1->productGoal,true)[4]}}</td></tr>
 </table>
 @endforeach
 

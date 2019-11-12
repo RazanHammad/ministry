@@ -22,6 +22,13 @@ class indexController extends Controller
     {  
      
     }
+  public function view()
+    {  
+        $user = User::get();
+
+     return view ('view',compact('user'));
+    }
+
 
     public function print($id)
     {   $user = User::find($id);
@@ -34,6 +41,7 @@ class indexController extends Controller
              $feas3= Feasability::where('user_id','=',$id)->get();
              $feas4= Feasability::where('user_id','=',$id)->get();
              $feas5= Feasability::where('user_id','=',$id)->get(); 
+             
 return view ('dashboard.print.index',compact(['user','person','project1','project2','project3','feas1','feas2','feas3','feas4','feas5']));
 
   

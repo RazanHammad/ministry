@@ -59,7 +59,7 @@ class feasabilityController extends Controller
         );
       
        $request_data = new Feasability;
-       $request_data->user_id =1;
+       $request_data->user_id =2;
        $request_data->project_id = $request->input('project_id');
         $request_data->toolsCatagory = json_encode(request('toolsCatagory'),JSON_UNESCAPED_UNICODE);
         $request_data->toolsNumber = json_encode(request('toolsNumber'),JSON_UNESCAPED_UNICODE);
@@ -90,8 +90,8 @@ class feasabilityController extends Controller
          $request_data->notes = json_encode(request('notes'),JSON_UNESCAPED_UNICODE);
           $request_data->workercost = json_encode(request('workercost'),JSON_UNESCAPED_UNICODE);
             
-     $data = $request->validate( $request_data);
-         dd($data);
+     //$data = $request->validate( $request_data);
+        // dd($data);
      $request_data->save();
        return redirect('/')->with('success' , 'feasability Created Successfully');
     }
