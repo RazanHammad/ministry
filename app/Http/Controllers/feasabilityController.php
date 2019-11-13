@@ -51,7 +51,7 @@ class feasabilityController extends Controller
                 'productUnit'  => 'sometimes|nullable',
                 'productNumber'  => 'sometimes|nullable',
                 'productUnitCost'   =>'sometimes|nullable',
-                    'productGoal' => 'sometimes|nullable',
+                'productGoal' => 'sometimes|nullable',
           
        ]
 
@@ -59,7 +59,7 @@ class feasabilityController extends Controller
         );
       
        $request_data = new Feasability;
-       $request_data->user_id =2;
+       $request_data->user_id =4;
        $request_data->project_id = $request->input('project_id');
         $request_data->toolsCatagory = json_encode(request('toolsCatagory'),JSON_UNESCAPED_UNICODE);
         $request_data->toolsNumber = json_encode(request('toolsNumber'),JSON_UNESCAPED_UNICODE);

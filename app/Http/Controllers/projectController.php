@@ -58,7 +58,7 @@ class projectController extends Controller
 
        $project = new Project;
       
-       $project->user_id = 2;
+       $project->user_id = 4;
        $project->projectName=$request->input('projectName');
         $project->projectField = $request->input('projectField');
 

@@ -54,7 +54,7 @@ class qualyController extends Controller
         );
 
        $qualy = new Qualification;
-       $qualy->user_id=2;
+       $qualy->user_id=4;
          $qualy->qualificatin = $request->input('qualificatin');
 
         $qualy->experience = json_encode(request('experience'),JSON_UNESCAPED_UNICODE);

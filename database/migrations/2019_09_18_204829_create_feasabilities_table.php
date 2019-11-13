@@ -27,7 +27,7 @@ class CreateFeasabilitiesTable extends Migration
             $table->string('toolsNumber');
             $table->string('toolsUnitCost');
             $table->string('toolsSource');
-            $table->string('productCatagory');
+            $table->string('productCatagory',255);
             $table->string('productUnit');
             $table->string('productNumber');
             $table->string('productUnitCost');
